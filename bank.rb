@@ -5,19 +5,18 @@ class Bank
 
   attr_reader :name, :user
 
-  def initialize(name)
+  def initialize(name, user = nil)
     @name = name
     @user = user
   end
 
   def create_bank
-    bank = Bank.new(@name)
-    "#{@name} has been created."
+    bank = Bank.new(name)
+    "#{name} has been created."
   end
 
   def open_account
-    @user = user
-    "An account has been opened for #{@user} with #{@name}."
+    "An account has been opened for #{user} with #{name}."
   end
 
 

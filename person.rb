@@ -10,8 +10,8 @@ class Person
   end
 
   def open_account
-    person = Person.new(@name, @deposit)
-    "#{@name} has been created with #{@deposit} galleons in cash."
+    person = Person.new(name, deposit)
+    "#{name} has been created with #{deposit} galleons in cash."
   end
 
 end

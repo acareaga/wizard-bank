@@ -17,7 +17,7 @@ class PersonTest < Minitest::Test
 
   def test_open_new_account_at_bank
     person = Bank.new("Bank of America", "Aaron")
-    assert_equal "Bank of America has been created.", bank.create_bank
+    assert_equal "An account has been opened for Aaron with Bank of America.", person.open_account
   end
 
 end
